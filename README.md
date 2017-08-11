@@ -1,3 +1,19 @@
+# Zepl users
+Set the below in your ~/.m2/settings.xml
+```aidl
+<settings>
+  <servers>
+    <server>
+      <id>zepl.repo</id>
+      <username>YOUR_JFROG_ID</username>
+      <password>YOUR_JFROG_PASSWORD</password>
+    </server>
+  </servers>
+</settings>
+```
+
+If you want to upload new version of this lib, use `mvn deploy`
+
 # Log4J Appender for Amazon Kinesis
 
 The Log4J Appender for Amazon Kinesis enables customers to publish logs from their Java applications into an Amazon Kinesis stream. We also provide a publisher application which uses the Log4J Appender for Amazon Kinesis to publish data from a file into an Amazon Kinesis stream.
